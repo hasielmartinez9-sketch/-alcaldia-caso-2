@@ -93,15 +93,16 @@ if (formContacto && mensajeExito) {
     mensajeExito.textContent = "";
     mensajeExito.className = "mensaje-exito oculto";
 
-    if (
-      EMAILJS_SERVICE_ID === "hasielmartinez9@gmail.com" ||
-      EMAILJS_TEMPLATE_ID === "hasielmartinez9@gmail.com" ||
-      EMAILJS_PUBLIC_KEY === "hasielmartinez9@gmail.com"
-    ) {
-      mensajeExito.textContent = "Falta configurar EmailJS. Agrega tu Service ID, Template ID y Public Key en script.js.";
-      mensajeExito.className = "mensaje-exito error";
-      return;
-    }
+if (
+  EMAILJS_SERVICE_ID === "Hasiel"; ||
+  EMAILJS_TEMPLATE_ID === "template_llna9zw" ||
+  EMAILJS_PUBLIC_KEY === "v8tt9vTcxtsSsSenRMRrI"
+) {
+  mensajeExito.textContent =
+    "Falta configurar EmailJS. Revisa tu Service ID, Template ID y Public Key.";
+  mensajeExito.className = "mensaje-exito error";
+  return;
+}
 
     if (!window.emailjs) {
       mensajeExito.textContent = "No se pudo cargar el servicio de correo. Revisa tu conexión e inténtalo de nuevo.";
