@@ -11,25 +11,19 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
   <header class="encabezado">
-    <div class="marca">
+    <a class="marca" href="#inicio" aria-label="Alcaldía Municipal, inicio">
       <div class="logo">AM</div>
-      <div>
-        <h2>Alcaldía Municipal</h2>
-        <p>Información y trámites</p>
-      </div>
-    </div>
-
-    <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+      <div><h2>Alcaldía Municipal</h2><p>Información y trámites</p></div>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
       <span class="icono-menu">☰</span> Menú
     </button>
-
-    <nav id="menu">
+    <nav id="menu" aria-label="Navegación principal">
       <a href="#inicio">Inicio</a>
       <a href="#tramites">Trámites</a>
       <a href="#servicios">Servicios</a>
-      <a href="#faq">Preguntas Frecuentes</a>
+      <a href="#faq">Preguntas frecuentes</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
@@ -46,30 +40,11 @@
         </div>
         <p class="nota">Prototipo académico. Los datos oficiales deben ser confirmados por la alcaldía correspondiente.</p>
       </div>
-
       <div class="tarjeta-portada">
         <h3>Accesos rápidos</h3>
-        <div class="acceso">
-          <span class="emoji">📄</span>
-          <div>
-            <h4>Trámites y requisitos</h4>
-            <p>Información para realizar gestiones.</p>
-          </div>
-        </div>
-        <div class="acceso">
-          <span class="emoji">🏛️</span>
-          <div>
-            <h4>Servicios municipales</h4>
-            <p>Servicios para la comunidad.</p>
-          </div>
-        </div>
-        <div class="acceso">
-          <span class="emoji">📁</span>
-          <div>
-            <h4>Documentos oficiales</h4>
-            <p>Formularios y archivos en PDF.</p>
-          </div>
-        </div>
+        <div class="acceso"><span class="emoji">📄</span><div><h4>Trámites y requisitos</h4><p>Información para realizar gestiones.</p></div></div>
+        <div class="acceso"><span class="emoji">🏛️</span><div><h4>Servicios municipales</h4><p>Servicios para la comunidad.</p></div></div>
+        <div class="acceso"><span class="emoji">📁</span><div><h4>Documentos oficiales</h4><p>Formularios y archivos en PDF.</p></div></div>
       </div>
     </section>
 
@@ -91,25 +66,19 @@
         <h2>Trámites y requisitos</h2>
         <p>Consulta información sobre las gestiones municipales más solicitadas.</p>
       </div>
-
       <div class="rejilla">
         <article class="tarjeta buscable" data-palabras="trámites requisitos documentos permisos">
-          <div class="icono">📄</div>
-          <h3>Requisitos de trámites</h3>
+          <div class="icono">📄</div><h3>Requisitos de trámites</h3>
           <p>Consulta los documentos y pasos necesarios para cada gestión municipal.</p>
           <a href="#contacto" class="enlace-tarjeta">Consultar información →</a>
         </article>
-
         <article class="tarjeta buscable" data-palabras="solicitudes constancias solvencias formularios">
-          <div class="icono">📋</div>
-          <h3>Solicitudes y constancias</h3>
+          <div class="icono">📋</div><h3>Solicitudes y constancias</h3>
           <p>Información sobre solicitudes, permisos y constancias disponibles.</p>
           <a href="#contacto" class="enlace-tarjeta">Ver documentos →</a>
         </article>
-
         <article class="tarjeta buscable" data-palabras="atención ayuda orientación consultas">
-          <div class="icono">💬</div>
-          <h3>Orientación ciudadana</h3>
+          <div class="icono">💬</div><h3>Orientación ciudadana</h3>
           <p>Conoce dónde solicitar información adicional sobre los trámites.</p>
           <a href="#contacto" class="enlace-tarjeta">Ver contacto →</a>
         </article>
@@ -122,50 +91,36 @@
         <h2>Servicios municipales</h2>
         <p>Información sobre los servicios ofrecidos por la municipalidad.</p>
       </div>
-
       <div class="lista-servicios">
         <article class="servicio buscable" data-palabras="servicios comunidad limpieza recolección">
-          <span class="numero">01</span>
-          <div>
-            <h3>Servicios para la comunidad</h3>
-            <p>Recolección de residuos, mantenimiento de áreas verdes y alumbrado público.</p>
-          </div>
+          <span class="numero">01</span><div><h3>Servicios para la comunidad</h3><p>Recolección de residuos, mantenimiento de áreas verdes y alumbrado público.</p></div>
         </article>
         <article class="servicio buscable" data-palabras="actividades eventos espacios públicos">
-          <span class="numero">02</span>
-          <div>
-            <h3>Actividades y espacios públicos</h3>
-            <p>Información sobre actividades culturales, deportivas y programas municipales.</p>
-          </div>
+          <span class="numero">02</span><div><h3>Actividades y espacios públicos</h3><p>Información sobre actividades culturales, deportivas y programas municipales.</p></div>
         </article>
         <article class="servicio buscable" data-palabras="consultas atención información">
-          <span class="numero">03</span>
-          <div>
-            <h3>Consultas y orientación</h3>
-            <p>Canales directos para solicitar información sobre los servicios disponibles.</p>
-          </div>
+          <span class="numero">03</span><div><h3>Consultas y orientación</h3><p>Canales directos para solicitar información sobre los servicios disponibles.</p></div>
         </article>
       </div>
     </section>
 
     <section id="faq" class="seccion">
       <div class="titulo-seccion">
-        <span class="etiqueta">AYUDA</span>
-        <h2>Preguntas Frecuentes</h2>
+        <span class="etiqueta">AYUDA</span><h2>Preguntas frecuentes</h2>
         <p>Resuelve tus dudas más comunes de forma rápida.</p>
       </div>
       <div class="faq-contenedor">
         <div class="faq-item buscable" data-palabras="horario atención hora">
-          <button class="faq-pregunta">¿Cuál es el horario de atención al público? <span class="faq-icono">+</span></button>
-          <div class="faq-respuesta"><p>El horario de atención es de lunes a viernes, de 8:00 a.m. a 4:00 p.m.</p></div>
+          <button type="button" class="faq-pregunta">¿Cuál es el horario de atención al público? <span class="faq-icono">+</span></button>
+          <div class="faq-respuesta"><p>El horario debe confirmarse con la alcaldía correspondiente antes de publicar esta información.</p></div>
         </div>
         <div class="faq-item buscable" data-palabras="documentos requisitos llevar">
-          <button class="faq-pregunta">¿Qué documentos necesito para un trámite básico? <span class="faq-icono">+</span></button>
-          <div class="faq-respuesta"><p>Generalmente se requiere DUI, NIT y una solicitud llena. Los requisitos específicos están en la sección de Trámites.</p></div>
+          <button type="button" class="faq-pregunta">¿Qué documentos necesito para un trámite básico? <span class="faq-icono">+</span></button>
+          <div class="faq-respuesta"><p>Los requisitos dependen del trámite. Consulta la información oficial de la municipalidad.</p></div>
         </div>
         <div class="faq-item buscable" data-palabras="contacto teléfono correo">
-          <button class="faq-pregunta">¿Cómo puedo contactar a la alcaldía? <span class="faq-icono">+</span></button>
-          <div class="faq-respuesta"><p>Puedes escribirnos al correo oficial o visitarnos en la dirección que aparece en la sección de Contacto.</p></div>
+          <button type="button" class="faq-pregunta">¿Cómo puedo contactar a la alcaldía? <span class="faq-icono">+</span></button>
+          <div class="faq-respuesta"><p>Puedes enviar una consulta mediante el formulario de contacto de esta página.</p></div>
         </div>
       </div>
     </section>
@@ -175,20 +130,10 @@
         <span class="etiqueta">ATENCIÓN CIUDADANA</span>
         <h2>Contacto y ubicación</h2>
         <p>Los datos oficiales se agregarán cuando sean confirmados por la municipalidad correspondiente.</p>
-        
         <div class="contacto-tarjeta">
-          <div class="dato-contacto">
-            <span class="emoji">📍</span>
-            <div><h3>Dirección</h3><p>Calle Principal, Centro, Municipio.</p></div>
-          </div>
-          <div class="dato-contacto">
-            <span class="emoji">☎️</span>
-            <div><h3>Teléfono</h3><p>7723-8189</p></div>
-          </div>
-          <div class="dato-contacto">
-            <span class="emoji">✉️</span>
-            <div><h3>Correo electrónico</h3><p>alcaldiamunicipal1@gmail.com</p></div>
-          </div>
+          <div class="dato-contacto"><span class="emoji">📍</span><div><h3>Dirección</h3><p>Calle Principal, Centro, Municipio</p></div></div>
+          <div class="dato-contacto"><span class="emoji">☎️</span><div><h3>Teléfono</h3><p>7230-6190</p></div></div>
+          <div class="dato-contacto"><span class="emoji">✉️</span><div><h3>Correo electrónico</h3><p>hasielmartinez9@gmail.com</p></div></div>
         </div>
       </div>
 
@@ -197,18 +142,19 @@
         <form id="formContacto">
           <div class="campo">
             <label for="nombre">Nombre completo</label>
-            <input type="text" id="nombre" required placeholder="Tu nombre">
+            <input type="text" id="nombre" name="nombre" required maxlength="100" autocomplete="name" placeholder="Tu nombre">
           </div>
           <div class="campo">
             <label for="email">Correo electrónico</label>
-            <input type="email" id="email" required placeholder="tu@correo.com">
+            <input type="email" id="email" name="email" required maxlength="150" autocomplete="email" placeholder="tu@correo.com">
           </div>
           <div class="campo">
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" rows="4" required placeholder="¿En qué podemos ayudarte?"></textarea>
+            <textarea id="mensaje" name="mensaje" rows="4" required maxlength="3000" placeholder="¿En qué podemos ayudarte?"></textarea>
           </div>
           <button type="submit" class="boton boton-primario boton-ancho">Enviar mensaje</button>
-          <p id="mensajeExito" class="mensaje-exito oculto">¡Mensaje enviado con éxito! Nos pondremos en contacto contigo.</p>
+          <p id="mensajeExito" class="mensaje-exito oculto" role="status" aria-live="polite"></p>
+          <p class="aviso-privacidad">Al enviar este formulario, tus datos se utilizarán para responder tu consulta.</p>
         </form>
       </div>
     </section>
@@ -216,18 +162,14 @@
 
   <footer>
     <div class="pie">
-      <div class="marca">
-        <div class="logo">AM</div>
-        <div>
-          <h3>Alcaldía Municipal</h3>
-          <p>Información y trámites</p>
-        </div>
-      </div>
+      <div class="marca"><div class="logo">AM</div><div><h3>Alcaldía Municipal</h3><p>Información y trámites</p></div></div>
       <a href="#inicio" class="enlace-footer">Volver arriba ↑</a>
     </div>
-    <p class="aviso-final">Prototipo académico desarrollado por Heysel Azucena Guzmán Yanes. No es un portal oficial y no recibe solicitudes ni pagos reales.</p>
+    <p class="aviso-final">Prototipo académico. No es un portal oficial y no procesa solicitudes ni pagos reales.</p>
   </footer>
 
+  <!-- EmailJS permite enviar el formulario sin un servidor propio. -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
