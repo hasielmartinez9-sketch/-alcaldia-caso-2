@@ -94,9 +94,9 @@ if (formContacto && mensajeExito) {
     mensajeExito.className = "mensaje-exito oculto";
 
     if (
-      EMAILJS_SERVICE_ID === "TU_SERVICE_ID" ||
-      EMAILJS_TEMPLATE_ID === "TU_TEMPLATE_ID" ||
-      EMAILJS_PUBLIC_KEY === "TU_PUBLIC_KEY"
+      EMAILJS_SERVICE_ID === "hasielmartinez9@gmail.com" ||
+      EMAILJS_TEMPLATE_ID === "hasielmartinez9@gmail.com" ||
+      EMAILJS_PUBLIC_KEY === "hasielmartinez9@gmail.com"
     ) {
       mensajeExito.textContent = "Falta configurar EmailJS. Agrega tu Service ID, Template ID y Public Key en script.js.";
       mensajeExito.className = "mensaje-exito error";
